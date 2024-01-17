@@ -1,0 +1,48 @@
+@media screen and (max-width: 1400px) {
+    #details {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: flex;
+    }
+    section {
+        height: fit-content;
+        margin: 0 5%;
+    }
+    #home {
+        display: block;
+        justify-content: center;
+    }
+    .images {
+        width: 275px;
+        height: 275px;
+    }
+
+    #about {
+        flex-direction: row; /* Keep items in a row on smaller screens */
+        align-items: center; /* Center items vertically */
+        text-align: left; /* Align text to the left on smaller screens */
+    }
+
+    .aboutImages {
+        margin-right: 20px; /* Add spacing between image and text on smaller screens */
+    }
+
+    .aboutMe {
+        order: 1; /* Keep aboutMe on the left */
+        margin-right: 20px; /* Add spacing between image and aboutMe on smaller screens */
+    }
+
+    .details {
+        order: 2; /* Move details to the right */
+        width: auto; /* Auto width for smaller screens */
+        max-width: none; /* Reset max-width */
+    }
+}
